@@ -4,7 +4,7 @@ import {BsLinkedin,BsGithub} from 'react-icons/bs'
 const Footer = () => {
     
   return (
-     <footer className={`${css.footerWrapper}`}>
+     <footer className={`${css.footerWrapper} paddingsLarge`}>
         <section className={`${css.footerContainer} flexSpaceBetween`}>
                <section className={css.footerLeftSection}>
                    <header className='flexColumn'>
@@ -21,8 +21,8 @@ const Footer = () => {
                     <li><a href='https://www.linkedin.com/in/kaushik-chhetri-7b17641a2/'><BsLinkedin /></a></li>
                     <li><a href="https://github.com/kaushikc005">
                         <BsGithub /></a></li>
-                    <li><p>Notes</p></li>
-                    <li><p>Experience</p></li>
+                    {/* <li><p>Notes</p></li>
+                    <li><p>Experience</p></li> */}
                    </ul>
                </section>
         </section>

@@ -1,12 +1,39 @@
+@import './global.scss';
 .skillsWrapper{
-
+       
+       @media (max-width:$sm),(max-width:$md){
+            width: 90vw;
+            align-items: center;
+            padding: 1.5rem !important;
+            margin-top: 1.5rem;
+       }
        height: fit-content;
        gap: 2rem;
        margin-bottom: 3rem;
        header{
             margin-top: -3rem;
+            @media (max-width:$sm),(max-width:$md){
+                  p{
+                      font-size: 2rem !important;
+                      text-align: center !important;
+                  }
+              }
        }
       .skillsContainer{
+
+            @media (max-width:$sm),(max-width:$md){
+                  margin: 0;
+                  grid-template-columns: repeat(3,1fr);
+                  margin: 0;
+                  gap: 1.75rem !important;
+                  
+            
+            }
+            @media (max-width:$lg){
+                  margin: 1.5rem;
+                  gap: 2rem;
+                  padding: 0;
+            }
             max-width: 100vw;
             gap: 2rem;
             column-gap: 6rem;
@@ -16,6 +43,15 @@
             grid-template-columns: repeat(3,1fr);
             .skillCard{
                   
+
+                  @media (max-width:$sm),(max-width:$md){
+                        padding: 1rem;
+                        margin: 0;
+
+                  }
+                  @media (max-width:$xl){
+                        padding: auto;
+                  }
                   min-height: fit-content;
                   padding: 0 2rem 1rem 2rem;
                   cursor: pointer;
@@ -32,6 +68,9 @@
                   }
 
                   .skillImg{
+                        @media (max-width:$sm),(max-width:$md){
+                              width: 3rem;
+                        }
                         width: 7rem;
                   }
             }

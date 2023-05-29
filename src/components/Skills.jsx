@@ -15,12 +15,12 @@ const Skills = () => {
             
       })
   return (
-    <section className={`${css.skillsWrapper} paddingsLarge flexColumn`}>
+    <section className={`${css.skillsWrapper} paddings flexColumn`}>
         <a className='anchor' id="skills"></a>
         <header>
-            <p className='primary-text'>The technologies i have worked with</p>
+            <p className='primary-text'>Technologies i have worked with</p>
         </header>
-        <section className={`${css.skillsContainer}`}>
+        <section className={`${css.skillsContainer} paddings`}>
         {skillArray.map((item,key) => (
            <section key={key} className={css.skillCard}
            style={{boxShadow:`0px 3px 8px ${item.color}`}}>  

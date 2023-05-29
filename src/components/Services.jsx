@@ -4,7 +4,7 @@ import Card from './Card'
 const Services = () => {
     console.log(Card)
   return (
-    <div className={`${css.servicesWrapper}`}>
+    <div className={`${css.servicesWrapper} paddings`}>
       <a className='anchor' id="services"></a>
         <div className={`${css.servicesContainer} flexCenter`}>
           <div className={css.leftSection}>

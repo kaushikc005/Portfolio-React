@@ -21,7 +21,10 @@ body{
 
 .paddings{
     @media(max-width:$sm),(max-width:$md){
-        padding: 1.5rem;
+        padding: 1.25rem;
+    }
+    @media (max-width:$lg){
+        padding: 3rem 1rem;
     }
     padding:2rem 4rem;
 }
@@ -63,6 +66,9 @@ body{
 
 .primary-text{
     @media (max-width: $sm) {
+        font-size: 2rem;
+      }
+      @media (max-width: $xl) {
         font-size: 2.5rem;
       }
       font-size: 3rem;
@@ -73,12 +79,20 @@ body{
         font-size: 1.1rem;
         line-height: 30px;
       }
+      @media (max-width: $lg) {
+        font-size: 1.1rem;
+        line-height: 30px;
+      }
       line-height: 50px;
       font-size: 1.3rem;
       font-weight: 500
 }
 
 .link{
+    @media (max-width:$xl){
+        font-size: 1rem;
+      
+    }
     color: #ff7500;
     font-size: 20px;
 }

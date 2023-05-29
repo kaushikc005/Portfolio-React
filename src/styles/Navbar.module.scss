@@ -5,6 +5,10 @@ $text-color:#0d2f3f;
 
 // Navbar CSS
 .navbarWrapper{
+
+    @media (max-width:$sm){
+        
+    }
     color: $text-color;
     position: sticky;
     top: 0;
@@ -15,6 +19,7 @@ $text-color:#0d2f3f;
     //box-shadow:0px 5px 25px rgba(0,0,0,0.5);
     .navbarContainer{
         width: 100%;
+        position: relative;
         .navbar-title{
             font-size: 1.5rem;
         }
@@ -23,7 +28,6 @@ $text-color:#0d2f3f;
             font-weight: 500;
             gap:4rem;
             li{
-                
                 list-style: none;
                 text-transform: uppercase;
                 a{
@@ -33,12 +37,30 @@ $text-color:#0d2f3f;
                     cursor: pointer;
                 }
             }
-  
         }
-    }
-    @media (max-width:$sm){
-          width: 100vw;
-          padding: 2rem !important;
+
+        .navMenu{
+
+        }
+        .navMobileMenu{
+            flex-direction: column;
+            position: absolute;
+            
+            top: 150%;
+            right: -100%;
+            padding: 1rem;
+            gap: 2rem;
+            background-color: rgba(255,255,255);
+            border-radius: 0.5rem;
+        }
+
+        .navShowMenu{
+            right: 0;
+        }
+        .navMenuBtn{
+            font-size: 2rem ;
+            cursor: pointer;
+        }
     }
 
 }

@@ -3,40 +3,52 @@
 .servicesWrapper{
     
     @media (max-width:$sm){
-        padding: 2rem 0;
+        padding: 2rem 0 !important;
+        margin-top: 0 !important;
+    }
+    @media (max-width:$lg){
+        padding-block: 5rem !important;
+        
     }
     background-color: #fff;
-    margin-top:3rem;
-    padding: 5rem;
+    margin-top:7rem;
     
     .servicesContainer{
         
         @media (max-width:$sm){
-            flex-direction: column;
+            flex-direction: column !important;
             align-items: center;
             justify-content: center;
             gap:2rem;
 
         }
+        @media (max-width:$lg){
+          gap:3rem;
+        //   align-items: center;
+            
+        }
+        
         align-items: start;
         gap:8rem;
         
         >div {
-            @media(max-width:$sm),(max-width:$sm){
+            @media(max-width:$sm){
 
                 width: 100%;
   
             }
-
-            
             flex: 1;
         }
         .leftSection{
-            @media(max-width:$sm),(max-width:$sm){
-
-                max-width: 100vw;
-                align-self: center;
-                margin-left: 0;
+            @media(max-width:$sm){
+                max-width: 60vw ;
+                align-self: flex-start !important;
+                margin: 0 !important;
+                margin-left: 0.25rem !important;
+            }
+            @media (max-width:$lg){
+                max-width: 50vw;
+                margin-left: 1.5rem;
             }
             max-width: 35vw;
             gap: 2rem;
@@ -44,9 +56,9 @@
         }
     
         .rightSection{
-            @media(max-width:$sm),(max-width:$md){
+            @media(max-width:$sm){
                 max-width: 90vw;
-                margin-left: 1rem;
+                margin-left: 0;
                 justify-content: center;
                 align-items: center;
                 margin-right: 0;

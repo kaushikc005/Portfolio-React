@@ -3,22 +3,34 @@
 
 
 .heroWrapper{
-    position: relative;
+    
     @media (max-width: $sm ), (max-width: $md){
       padding:0 2rem;
     }
-    
+    @media (max-width:$xl){
+      padding: 4rem ;
+    }
+    position: relative;
     .topSection{
-      @media(max-width:$sm){
+      @media(max-width:$sm),(max-width:$md){
         margin-top: 0;
-        gap: 2rem;
+        margin-bottom: 2rem !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 2rem !important;
+        text-align: center !important;
+        width: 100%;
+        
+      }
+      @media(max-width:$lg){
+        margin-top: 0;
+        gap: 15rem;
         justify-content:center;
         text-align: left;
-        
         width: 100%;
       }
       width: 100%;
-      margin-top: 6rem;
       align-items: flex-start !important;
 
     }
@@ -36,30 +48,43 @@
       background-position: bottom;
       transform: translateX(-50%);
       }
+    @media (max-width:$lg){
+
+      top: 20%;
+    }
       width: 100%;
       position: absolute;
       top: 0;
       left: 50%;
       margin: auto;
       transform: translateX(-50%);
+      // padding-bottom: 15rem;
    
     img{
 
       @media (max-width: $sm ), (max-width: $md){
-        width: 80%;
+        width: 80% !important;
         margin: 0;
         margin-top: 1rem;
       }
+      @media (max-width:$lg){
+        width: 35%;
+      }
+     
       background-image: url('splash.png') !important;
-      width:30vw;
+      width:27%;
       background-repeat: no-repeat;
       background-size: contain;   
-      margin-top: 4rem;
+      
      }
     }
     .bottomSection{
       @media (max-width: $sm), (max-width: $md) {
         display: none;
+    }
+    @media (max-width:$xl){
+      margin: 1rem;
+      margin-top: 2.5rem;
     }
         margin-block: 1rem;
         flex-wrap: wrap;
