@@ -1,0 +1,67 @@
+// HeroSection CSS
+@import './global.scss';
+
+
+.heroWrapper{
+    position: relative;
+    @media (max-width: $sm ), (max-width: $md){
+      padding:0 2rem;
+    }
+    
+    .topSection{
+      @media(max-width:$sm){
+        margin-top: 0;
+        gap: 2rem;
+        justify-content:center;
+        text-align: left;
+        
+        width: 100%;
+      }
+      width: 100%;
+      margin-top: 6rem;
+      align-items: flex-start !important;
+
+    }
+
+   .heroSectionImg{
+    
+    @media (max-width: $sm ), (max-width: $md) {
+      position: relative;
+      left: 50%;
+      font-size: 4rem;
+      background-size: 20rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-position: bottom;
+      transform: translateX(-50%);
+      }
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin: auto;
+      transform: translateX(-50%);
+   
+    img{
+
+      @media (max-width: $sm ), (max-width: $md){
+        width: 80%;
+        margin: 0;
+        margin-top: 1rem;
+      }
+      background-image: url('splash.png') !important;
+      width:30vw;
+      background-repeat: no-repeat;
+      background-size: contain;   
+      margin-top: 4rem;
+     }
+    }
+    .bottomSection{
+      @media (max-width: $sm), (max-width: $md) {
+        display: none;
+    }
+        margin-block: 1rem;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,43 @@
+
+
+.footerWrapper{
+
+    padding: 8rem !important;
+    .footerContainer{
+
+        .footerLeftSection{
+            // display: flex;
+            // gap: 20rem;
+            header{
+                gap: 2rem;
+
+                p{
+                    a{
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+        
+        .footerRightSection{
+            font-size: 1.25rem;
+            align-items: flex-start;
+            justify-content: flex-start;
+            
+            h4{
+                margin-bottom: 1rem;
+            }
+            ul{
+                margin-right: 4rem;
+                gap: 1rem;
+                align-items: center;
+                li{
+                    a{
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+

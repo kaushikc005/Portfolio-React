@@ -1,0 +1,46 @@
+
+.portfolioWrapper{
+
+    padding: 8rem;
+     padding-left: 6rem !important;
+     padding-right: 6rem !important;
+     justify-content: space-between;
+     background-color: #fff;
+     header{
+        
+     }
+    .portfolioContainer{
+        padding: 2rem 4rem;
+        gap:5rem;
+        margin-left: 2rem;
+        
+        cursor: pointer;
+        img{
+            width: 20vw;
+            min-height: 248px;
+            border-radius: 20px;
+            box-shadow:1px 10px 10px rgba(0,0,0,0.1);
+            position: relative;
+
+            &:hover{
+                background-color: black;
+            }
+
+             
+        }
+
+      
+        .portfolioBtn{
+            position: absolute;
+            top: 50%;
+            display: flex;
+            gap: 2rem;
+            opacity: 0;
+        }
+       
+    }
+    
+
+
+}
+

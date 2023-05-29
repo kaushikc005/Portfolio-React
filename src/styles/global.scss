@@ -1,0 +1,98 @@
+$text-color:#0d2f3f;
+$sm :640px;
+$md : 768px;
+$lg : 1024px;
+$xl: 1280px;
+$xxl: 1536px;
+$primary: #0D2F3F;
+$secondary: #286F6C;
+$secondary-white: #E7E7E7;
+
+*{
+    margin: 0;
+    padding: 0;
+    color: $text-color;
+    font-family: Eudoxus Sans,sans-serif;
+}
+
+body{
+    background-color: #f8f7f1;
+}
+
+.paddings{
+    @media(max-width:$sm),(max-width:$md){
+        padding: 1.5rem;
+    }
+    padding:2rem 4rem;
+}
+
+.paddingsLarge{
+    @media(max-width:$sm),(max-width:$md){
+        padding: 3rem;
+    }
+    padding:6rem;
+}
+.add-shadow{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.22);
+}
+
+.flex{
+    display: flex;
+}
+
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+.flexCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flexStart{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.flexSpaceBetween{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.primary-text{
+    @media (max-width: $sm) {
+        font-size: 2.5rem;
+      }
+      font-size: 3rem;
+      font-weight: bold;
+}
+.secondary-text{
+    @media (max-width: $sm) {
+        font-size: 1.1rem;
+        line-height: 30px;
+      }
+      line-height: 50px;
+      font-size: 1.3rem;
+      font-weight: 500
+}
+
+.link{
+    color: #ff7500;
+    font-size: 20px;
+}
+
+
+.menu{
+    list-style: none;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -150px;
+    visibility: hidden;
+  }
+
+
