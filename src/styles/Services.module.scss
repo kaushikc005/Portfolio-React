@@ -11,8 +11,9 @@
         
     }
     background-color: #fff;
-    margin-top:7rem;
-    
+    margin-block:7rem;
+    // margin-top:15rem;
+    overflow-x: hidden;
     .servicesContainer{
         
         @media (max-width:$sm){
@@ -30,6 +31,7 @@
         
         align-items: start;
         gap:8rem;
+        margin-block: 5rem;
         
         >div {
             @media(max-width:$sm){

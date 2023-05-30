@@ -1,11 +1,19 @@
 import React from 'react'
 import css from '../styles/Footer.Module.scss'
 import {BsLinkedin,BsGithub} from 'react-icons/bs'
+import { motion } from 'framer-motion'
+import { bounce, fadeIn } from '../utils/motion'
 const Footer = () => {
     
   return (
-     <footer className={`${css.footerWrapper} paddingsLarge`}>
-        <section className={`${css.footerContainer} flexSpaceBetween`}>
+     <motion.footer
+     initial='hidden'
+     whileInView='show' 
+     className={`${css.footerWrapper} paddingsLarge`}>
+        <motion.section 
+        
+        variants={bounce}
+        className={`${css.footerContainer} flexSpaceBetween`}>
                <section className={css.footerLeftSection}>
                    <header className='flexColumn'>
                     <p className='primary-text'>Let's make something <br/>
@@ -25,8 +33,8 @@ const Footer = () => {
                     <li><p>Experience</p></li> */}
                    </ul>
                </section>
-        </section>
-     </footer>
+        </motion.section>
+     </motion.footer>
   )
 }
 

@@ -1,5 +1,3 @@
-import { useState } from 'react'
-import './styles/App.scss'
 import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
 import Services from './components/Services'

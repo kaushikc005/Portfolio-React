@@ -1,28 +1,49 @@
 import React from 'react'
 import css from '../styles/HeroSection.module.scss'
+import { fadeIn } from '../utils/motion'
+import { motion } from 'framer-motion'
 const HeroSection = () => {
+
+   
   return (
-    <div className={`${css.heroWrapper} paddings`}>
-        <div className={`${css.topSection} flexSpaceBetween`}>
-            <p className={` primary-text`}>
+    <motion.div 
+    initial='hidden'
+    whileInView='show' 
+    className={`${css.heroWrapper} paddings`}>
+        <motion.div className={`${css.topSection} flexSpaceBetween`}>
+            <motion.p 
+            variants={fadeIn("left","tween",0.3,1)}
+            className={` primary-text`}>
             Hey There,<br/>I'm Kaushik.
-            </p>
-            <p className={`secondary-text`}>
+            </motion.p>
+            <motion.p 
+            variants={fadeIn("right","tween",0.3,1)}
+            initial='hidden'
+            whileInView='show'
+            className={`secondary-text`}>
                 I'm a frontend developer,<br/>
                 who loves to make creative <br/> 
                 and fruitful designs come true.<br />  
-            </p>
-        </div>
-         <div className={`${css.heroSectionImg} flexCenter`}>
-            <img src='person.png'/>
-         </div>
-        <div className={`${css.bottomSection} flexSpaceBetween`}>
+            </motion.p>
+        </motion.div>
+         <motion.div 
+         
+         className={`${css.heroSectionImg} flexCenter`}>
+            <motion.img
+            variants={fadeIn("up","tween",0.4,1)}
+            src='person.png'/>
+         </motion.div>
+        <motion.div 
+        variants={fadeIn("down","tween",0.3,1)}
+        initial='hidden'
+        whileInView='show'
+        className={`${css.bottomSection} flexSpaceBetween`}>
             <a href="mailto:kaushikc005@gmail.com"
             className='link'>kaushikc005@gmail.com</a> 
             <p className='secondary-text'></p>
-        </div>
+        </motion.div>
         
-    </div>
+    </motion.div>
   )
 }
 

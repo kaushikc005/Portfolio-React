@@ -6,17 +6,16 @@ $text-color:#0d2f3f;
 // Navbar CSS
 .navbarWrapper{
 
-    @media (max-width:$sm){
-        
+    @media (max-width:$sm),(max-width:$md){
+        padding-bottom: 0rem !important;
     }
     color: $text-color;
-    position: sticky;
-    top: 0;
+    position: sticky !important;
+    top: 0 !important;
     z-index: 100;
     padding-bottom: 4rem;
     background-color: #f8f7f1;
-
-    //box-shadow:0px 5px 25px rgba(0,0,0,0.5);
+    
     .navbarContainer{
         width: 100%;
         position: relative;
@@ -38,10 +37,6 @@ $text-color:#0d2f3f;
                 }
             }
         }
-
-        .navMenu{
-
-        }
         .navMobileMenu{
             flex-direction: column;
             position: absolute;
@@ -52,10 +47,12 @@ $text-color:#0d2f3f;
             gap: 2rem;
             background-color: rgba(255,255,255);
             border-radius: 0.5rem;
+            display: none;
         }
 
         .navShowMenu{
             right: 0;
+            display: flex;
         }
         .navMenuBtn{
             font-size: 2rem ;

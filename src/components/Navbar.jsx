@@ -1,20 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import css from '../styles/Navbar.module.scss'
+import { motion } from 'framer-motion'
 import {BiMenuAltRight} from 'react-icons/bi'
 import {RiCloseFill} from 'react-icons/ri'
-
+import useHeaderShadow from '../hooks/useHeaderShadow'
+import { bounce,getMenuStyles } from '../utils/motion'
 const Navbar = () => {
-//   window.addEventListener('scroll',(e)=>{
-//     const nav = document.getElementsByClassName('navbarWrapper');
-//     console.log(nav)
-//     if(window.scrollY>10){
-//       nav.classList.add("add-shadow");
-//     }else{
-//       nav.classList.remove("add-shadow");
-//     }
-
-// });'
-
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(false);
   
@@ -31,7 +22,7 @@ const Navbar = () => {
       window.addEventListener("resize", showButton);
       showButton();
      },[])
-   console.log(window.innerWidth)
+
    const handleClick=()=> {
     setClick(prev => !prev)
     if(click)
@@ -39,9 +30,16 @@ const Navbar = () => {
     else
     document.getElementById('#menuToggle').classList.add(css.navShowMenu) 
    }
-
+  
   return (
-    <div className={`${css.navbarWrapper} paddings`}>
+    <motion.div
+       variants={bounce}
+      initial='hidden'
+      whileInView='show' 
+      viewport={{ once: true, amount: 0.25 }}
+      className={`${css.navbarWrapper} paddings`}
+      style={{boxShadow:useHeaderShadow()}}
+    >
       
         <div className={`flexSpaceBetween ${css.navbarContainer}`} >
              <div className={css.navbarTitle}>
@@ -49,6 +47,7 @@ const Navbar = () => {
              </div>
 
              <ul id="#menuToggle"
+             style={getMenuStyles(click)}
              className={`${button?css.navMobileMenu:css.navMobile} flexCenter`}>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -61,17 +60,10 @@ const Navbar = () => {
              <div className={css.navMenuBtn} onClick={handleClick}>
               {click ?<RiCloseFill />:<BiMenuAltRight />}
               </div>
-             }
-              {/* !button ?<ul className='flexCenter'>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#">Print CV</a></li>
-             </ul> */}
-             
+             }        
         </div>
         
-    </div>
+    </motion.div>
   )
 }
 

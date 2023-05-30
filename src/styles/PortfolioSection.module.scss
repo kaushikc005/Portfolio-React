@@ -11,8 +11,11 @@
      padding: 8rem;
      padding-left: 6rem !important;
      padding-right: 6rem !important;
+     padding-bottom: 10rem !important;
      justify-content: space-between;
      background-color: #fff;
+     margin-top:7rem;
+     overflow-x: hidden;
      header{
         @media (max-width:$sm),(max-width:$md){
             flex-direction: column !important;
@@ -46,33 +49,97 @@
         gap:5rem;
         margin-left: 2rem;
 
-       
-        
-        cursor: pointer;
-        img{
-
-            @media (max-width:$sm),(max-width:$md){
-                width: 80vw !important;
-                padding: 0 !important;
-            }
-            @media (max-width:$xl){
-                width: 35vw;
-                padding: 0;
-              }
-            width: 20vw;
-            min-height: 248px;
-            border-radius: 20px;
-            box-shadow:1px 10px 10px rgba(0,0,0,0.1);
+        .portfolioImg{
             position: relative;
-
-            &:hover{
-                background-color: black;
+            img{
+                @media (max-width:$sm),(max-width:$md){
+                    width: 80% !important;
+                    padding: 0 !important;
+                    margin-left: 10%;
+                }
+                @media (max-width:$xl){
+                    width: 35vw;
+                    padding: 0;
+                  }
+                width: 20vw;
+                min-height: 248px;
+                border-radius: 20px;
+                box-shadow:1px 10px 10px rgba(0,0,0,0.1);  
             }
+    
+            .overlay {
+                @media (max-width:$sm),(max-width:$md){
+                    width: 80% !important;
+                    padding: 0 !important;
+                    margin-left: 10%;
+                }
+                @media (max-width:$xl){
+                    width: 35vw;
+                    padding: 0;
+                  }
+                width: 20vw;
+               
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                border-radius: 20px;
+                background: rgba(0, 0, 0, 0);
+                transition: background 0.5s ease;
+              }
+              
+              .portfolioBtn{
 
-             
+                @media (max-width:$sm),(max-width:$md){
+                    margin-left: 25%!important;
+                }
+                position: absolute;
+                width: 100%;
+                margin-left: 15%;
+                
+                top: 40%;
+                left: 50%;
+                text-align: center;
+                opacity: 0;
+               
+                transform: translateX(-50%);
+                transition: opacity .35s ease;
+
+
+                .demoBtn,.codeBtn{
+                    @media (max-width:$sm),(max-width:$md){
+                        padding: 0.75rem 1rem;
+                        
+                    }
+                    cursor: pointer;
+                    padding: 1rem 1.5rem;
+                    background-color: rgb(251, 251, 118);
+                    border-radius: 0.5rem;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    background: rgb(2,0,36);
+                    color: #fff;
+                    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(180,182,87,1) 0%, rgba(88,227,202,1) 68%);   
+                    
+
+                }
+              }
+              &:hover {
+                .overlay {
+                    display: block;
+                    background: rgba(0, 0, 0, .4);
+                }
+                .portfolioBtn{
+                    opacity: 1;
+                  }
+                
+              }
+
+
+
         }
-
-      
+        
         .portfolioBtn{
             position: absolute;
             top: 50%;

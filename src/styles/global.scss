@@ -13,15 +13,19 @@ $secondary-white: #E7E7E7;
     padding: 0;
     color: $text-color;
     font-family: Eudoxus Sans,sans-serif;
+    max-width: 100vw;
+
+    
 }
 
 body{
     background-color: #f8f7f1;
+    overflow-x: hidden;
 }
 
 .paddings{
     @media(max-width:$sm),(max-width:$md){
-        padding: 1.25rem;
+        padding: 1.25rem !important;
     }
     @media (max-width:$lg){
         padding: 3rem 1rem;

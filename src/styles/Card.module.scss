@@ -6,30 +6,26 @@
         padding: 0;
         width: 90vw !important;
         align-items: center;
-        margin-left: 1rem;
-
     }
-    @media (max-width:$lg){
+    // @media (max-width:$lg){
         
-    }
+    // }
     display: flex;
     flex-direction: column;
     gap: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    
+    overflow-x: hidden;
     .cardContainer{
         
         @media(max-width:$sm),(max-width:$md){
             width: 80vw !important;
-            justify-content: center;
+            
+            // justify-content: center;
 
         }
         @media (max-width:$lg){
-
-            height: 2px !important;
             width: 100%;
-        
         }
 
         align-items: center;

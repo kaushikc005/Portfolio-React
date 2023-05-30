@@ -9,11 +9,12 @@
         padding:0rem !important;
         gap: 2rem;
     }
-
+    
     @media(max-width:$xl){
         padding: 8rem;
     }
-    
+    margin-top: 2rem;
+    overflow-x: hidden;
     .footerContainer{
 
         @media (max-width:$sm),(max-width:$md){
@@ -24,7 +25,7 @@
             gap: 1rem !important;
         }
         @media (max-width:$lg){
-            gap: 5rem !important;
+            gap: 5rem;
         }
         
         padding-left: 5rem;

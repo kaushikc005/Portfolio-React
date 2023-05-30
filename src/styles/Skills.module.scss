@@ -10,6 +10,7 @@
        height: fit-content;
        gap: 2rem;
        margin-bottom: 3rem;
+       margin-block:7rem;
        header{
             margin-top: -3rem;
             @media (max-width:$sm),(max-width:$md){
@@ -22,12 +23,9 @@
       .skillsContainer{
 
             @media (max-width:$sm),(max-width:$md){
-                  margin: 0;
+                  margin: 0 !important;
                   grid-template-columns: repeat(3,1fr);
-                  margin: 0;
                   gap: 1.75rem !important;
-                  
-            
             }
             @media (max-width:$lg){
                   margin: 1.5rem;
@@ -54,7 +52,6 @@
                   }
                   min-height: fit-content;
                   padding: 0 2rem 1rem 2rem;
-                  cursor: pointer;
                   border-left: 1px solid black;
                   border-bottom: 1px solid black;
                   border-right: 1px solid black;
@@ -64,7 +61,7 @@
                   transition: 0.1s all ease;
                  
                   &:hover{
-                        transform: scale(1.05);
+                        transform: scale(1.05) !important;
                   }
 
                   .skillImg{

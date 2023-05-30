@@ -1,11 +1,11 @@
 import React from 'react'
 import css from '../styles/Skills.module.scss'
 import { skillArray } from '../utils/data'
+import { motion } from 'framer-motion'
+import { fadeIn, textAnimate } from '../utils/motion'
 
 
 const Skills = () => {
-   
-    console.log(skillArray)
     const skillcard=skillArray.map((item,key) => {
         <section key={key}>
             
@@ -15,23 +15,31 @@ const Skills = () => {
             
       })
   return (
-    <section className={`${css.skillsWrapper} paddings flexColumn`}>
+    <motion.section 
+    initial='hidden'
+    whileInView='show' 
+    className={`${css.skillsWrapper} paddings flexColumn`}>
         <a className='anchor' id="skills"></a>
-        <header>
+        <motion.header
+        variants={textAnimate(0.1)}
+        >
             <p className='primary-text'>Technologies i have worked with</p>
-        </header>
+        </motion.header>
         <section className={`${css.skillsContainer} paddings`}>
         {skillArray.map((item,key) => (
-           <section key={key} className={css.skillCard}
+           <motion.section 
+           variants={fadeIn("up","tween",(key+1)*0.1,1)}
+           key={key} 
+           className={css.skillCard}
            style={{boxShadow:`0px 3px 8px ${item.color}`}}>  
             <img src={item.src} className={css.skillImg}/>
-         </section>
+         </motion.section>
             
            )
            )}
         </section>
 
-    </section>
+    </motion.section>
   )
 }
 

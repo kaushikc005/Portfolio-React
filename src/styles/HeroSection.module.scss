@@ -6,11 +6,15 @@
     
     @media (max-width: $sm ), (max-width: $md){
       padding:0 2rem;
+      
     }
     @media (max-width:$xl){
       padding: 4rem ;
     }
+    margin-top: 3rem;
+    height: 53vh;
     position: relative;
+    overflow: hidden;
     .topSection{
       @media(max-width:$sm),(max-width:$md){
         margin-top: 0;
@@ -57,7 +61,9 @@
       top: 0;
       left: 50%;
       margin: auto;
+      margin-top: 2rem;
       transform: translateX(-50%);
+      
       // padding-bottom: 15rem;
    
     img{
@@ -72,7 +78,7 @@
       }
      
       background-image: url('splash.png') !important;
-      width:27%;
+      width:30%;
       background-repeat: no-repeat;
       background-size: contain;   
       
