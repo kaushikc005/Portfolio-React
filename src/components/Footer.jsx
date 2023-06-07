@@ -2,7 +2,7 @@ import React from 'react'
 import css from '../styles/Footer.Module.scss'
 import {BsLinkedin,BsGithub} from 'react-icons/bs'
 import { motion } from 'framer-motion'
-import { bounce, fadeIn } from '../utils/motion'
+import { bounce } from '../utils/motion'
 const Footer = () => {
     
   return (

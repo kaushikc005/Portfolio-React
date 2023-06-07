@@ -56,7 +56,7 @@ const Navbar = () => {
             <a href="#portfolio">Portfolio</a>
           </li>
           <li>
-            <a href="https://drive.google.com/file/d/1kxen9HkTZAuVIaXp4wCOV64aE108fB8r/view?usp=sharing" download>Download Resume</a>
+            <a href="https://drive.google.com/file/d/1XT5a4SarYB6e-ttS4nXIsU-Y6hdoxyED/view?usp=sharing" download>Download Resume</a>
           </li>
         </ul>
 
