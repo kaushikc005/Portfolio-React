@@ -13,6 +13,7 @@ const Card = () => {
        className={`${css.cardWrapper}`}>
            {experience.map((item,key)=> (
                <motion.section
+                key={key}
                variants={fadeIn("left","tween",(key)*0.3,1)}    
                className={`${css.cardContainer} flex paddings`}>
                    <div className={css.leftCardSection}>
