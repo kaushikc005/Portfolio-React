@@ -10,7 +10,7 @@ const Footer = () => {
      initial='hidden'
      whileInView='show' 
      className={`${css.footerWrapper} paddingsLarge`}>
-        <motion.section 
+        <motion.article 
         
         variants={bounce}
         className={`${css.footerContainer} flexSpaceBetween`}>
@@ -33,7 +33,7 @@ const Footer = () => {
                     <li><p>Experience</p></li> */}
                    </ul>
                </section>
-        </motion.section>
+        </motion.article>
      </motion.footer>
   )
 }

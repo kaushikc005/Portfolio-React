@@ -1,98 +1,92 @@
 // HeroSection CSS
-@import './global.scss';
+@import "./global.scss";
 
-
-.heroWrapper{
-    
-    @media (max-width: $sm ), (max-width: $md){
-      padding:0 2rem;
-      
-    }
-    @media (max-width:$xl){
-      padding: 4rem ;
-    }
-    margin-top: 3rem;
-    height: 53vh;
-    position: relative;
-    overflow: hidden;
-    .topSection{
-      @media(max-width:$sm),(max-width:$md){
-        margin-top: 0;
-        margin-bottom: 2rem !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        gap: 2rem !important;
-        text-align: center !important;
-        width: 100%;
-        
-      }
-      @media(max-width:$lg){
-        margin-top: 0;
-        gap: 15rem;
-        justify-content:center;
-        text-align: left;
-        width: 100%;
-      }
+.heroWrapper {
+  @media (max-width: $sm), (max-width: $md) {
+    padding: 0 2rem;
+  }
+  @media (max-width: $xl) {
+    padding: 4rem;
+  }
+  margin-top: 3rem;
+  height: 83vh;
+  position: relative;
+  overflow: hidden;
+  .topSection {
+    @media (max-width: $sm), (max-width: $md) {
+      margin-top: 0;
+      margin-bottom: 2rem !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 2rem !important;
+      text-align: center !important;
       width: 100%;
-      align-items: flex-start !important;
-
     }
+    @media (max-width: $lg) {
+      margin-top: 0;
+      gap: 15rem;
+      justify-content: center;
+      text-align: left;
+      width: 100%;
+    }
+    width: 100%;
+    align-items: flex-start !important;
+  }
 
-   .heroSectionImg{
-    
-    @media (max-width: $sm ), (max-width: $md) {
+  .heroSectionImg {
+    @media (max-width: $sm), (max-width: $md) {
       position: relative;
       left: 50%;
       font-size: 4rem;
+      height: 10vh;
       background-size: 20rem;
       display: flex;
       align-items: center;
       justify-content: center;
       background-position: bottom;
       transform: translateX(-50%);
-      }
-    @media (max-width:$lg){
-
+    }
+    @media (max-width: $lg) {
       top: 20%;
     }
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 50%;
-      margin: auto;
-      margin-top: 2rem;
-      transform: translateX(-50%);
-      
-      // padding-bottom: 15rem;
-   
-    img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: auto;
 
-      @media (max-width: $sm ), (max-width: $md){
+    transform: translateX(-50%);
+
+    img {
+      @media (max-width: $sm), (max-width: $md) {
         width: 80% !important;
         margin: 0;
         margin-top: 1rem;
       }
-      @media (max-width:$lg){
+      @media (max-width: $lg) {
         width: 35%;
       }
-     
-      background-image: url('splash.png') !important;
-      width:30%;
+      margin-bottom: 10rem;
+      background-image: url("splash.png") !important;
+      width: 30%;
       background-repeat: no-repeat;
-      background-size: contain;   
+      background-size: contain;
+    }
+  }
+  .bottomSection {
+    @media (max-width: $sm), (max-width: $md) {
+      display: none;
+    }
+    margin-top: 10rem;
+    align-items: center;
+    flex-wrap: wrap;
+    .bottomRight {
+      display: flex;
+      align-self: center;
+      gap: 2rem;
+
       
-     }
     }
-    .bottomSection{
-      @media (max-width: $sm), (max-width: $md) {
-        display: none;
-    }
-    @media (max-width:$xl){
-      margin: 1rem;
-      margin-top: 2.5rem;
-    }
-        margin-block: 1rem;
-        flex-wrap: wrap;
-    }
+  }
 }

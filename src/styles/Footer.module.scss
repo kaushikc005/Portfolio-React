@@ -1,104 +1,99 @@
-@import './global.scss';
+@import "./global.scss";
 
-.footerWrapper{
+.footerWrapper {
+  @media (max-width: $sm), (max-width: $md) {
+    flex-direction: column !important;
+    padding: 0rem !important;
+    margin: 1rem;
+    padding: 0rem !important;
+    gap: 2rem;
+  }
 
-    @media (max-width:$sm),(max-width:$md){
+  @media (max-width: $xl) {
+    padding: 8rem;
+  }
+  height: max-content;
+  overflow-x: hidden;
+  .footerContainer {
+    @media (max-width: $sm), (max-width: $md) {
+      width: 10 0%;
+      flex-direction: column;
+      margin: 1rem !important;
+      padding-bottom: 2rem;
+      gap: 1rem !important;
+    }
+    @media (max-width: $lg) {
+      gap: 5rem;
+    }
+
+    padding-left: 5rem;
+    padding-right: 5rem;
+    align-items: start;
+
+    .footerLeftSection {
+      @media (max-width: $sm), (max-width: $md) {
         flex-direction: column !important;
-        padding: 0rem !important;
-        margin: 1rem;
-        padding:0rem !important;
+        margin: 0 !important;
+        padding-bottom: 2rem !important;
+      }
+      header {
         gap: 2rem;
-    }
-    
-    @media(max-width:$xl){
-        padding: 8rem;
-    }
-    margin-top: 2rem;
-    overflow-x: hidden;
-    .footerContainer{
 
-        @media (max-width:$sm),(max-width:$md){
-            width: 10   0%;
-            flex-direction: column;
-            margin: 1rem !important;
-            padding-bottom: 2rem;
-            gap: 1rem !important;
-        }
-        @media (max-width:$lg){
-            gap: 5rem;
-        }
-        
-        padding-left: 5rem;
-        padding-right: 5rem;
-        align-items: start;
-        
-        
-        .footerLeftSection{
-            @media (max-width:$sm),(max-width:$md){
-                flex-direction: column !important;
-                margin: 0 !important;
-                padding-bottom: 2rem !important;
+        p {
+          @media (max-width: $sm), (max-width: $md) {
+            font-size: 2rem !important;
+            text-align: center;
+          }
+          a {
+            @media (max-width: $sm) {
+              font-size: 2rem !important;
             }
-            header{
-                gap: 2rem;
-               
-                p{
-                    @media (max-width:$sm),(max-width:$md){
-                        font-size: 2rem !important;
-                        text-align: center;
-                    }
-                    a{
-                        @media (max-width:$sm){
-                            font-size: 2rem !important;
-                        }
-                        
-                        font-size: 3rem;
-                    }
-                }
-            }
-        }
-        
-        .footerRightSection{
 
-            @media (max-width:$sm),(max-width:$md){
-                align-self: center !important;
-                margin-right: 1rem !important;
-            }
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-size: 1rem;
-            
-            margin-top: 1rem;
-            margin-right: 4rem;
-            h4{
-                margin-bottom: 1rem;
-                font-size: 1.5rem;
-            }
-            ul{
-                @media (max-width:$sm){
-                    margin: 0 !important;
-                    align-items: center;
-                }
-                @media(max-width:$lg){
-                    margin-right: 1rem;
-                }
-                margin-right: 4rem;
-                gap: 1rem;
-                align-items: center;
-                justify-content: center;
-                flex-direction: row;
-                li{
-                    a{
-                        // @media (max-width:$sm){
-                        //     margin: 0 !important;
-                        //     align-items: center;
-                        // }
-                        font-size: 2.7rem;
-                    }
-                }
-            }
+            font-size: 3rem;
+          }
         }
+      }
     }
+
+    .footerRightSection {
+      @media (max-width: $sm), (max-width: $md) {
+        align-self: center !important;
+        margin-right: 1rem !important;
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1rem;
+
+      margin-top: 1rem;
+      margin-right: 4rem;
+      h4 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+      }
+      ul {
+        @media (max-width: $sm) {
+          margin: 0 !important;
+          align-items: center;
+        }
+        @media (max-width: $lg) {
+          margin-right: 1rem;
+        }
+        margin-right: 4rem;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        li {
+          a {
+            // @media (max-width:$sm){
+            //     margin: 0 !important;
+            //     align-items: center;
+            // }
+            font-size: 2.7rem;
+          }
+        }
+      }
+    }
+  }
 }
-

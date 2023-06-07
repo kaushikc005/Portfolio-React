@@ -1,83 +1,71 @@
 // Services CSS
-@import './global.scss';
-.servicesWrapper{
-    
-    @media (max-width:$sm){
-        padding: 2rem 0 !important;
-        margin-top: 0 !important;
+@import "./global.scss";
+.servicesWrapper {
+  @media (max-width: $sm) {
+    padding: 2rem 0 !important;
+    margin-top: 10rem !important;
+  }
+  @media (max-width: $lg) {
+    padding-block: 5rem !important;
+  }
+  background-color: #fff;
+  margin-bottom: 5rem !important;
+  overflow-x: hidden;
+  .servicesContainer {
+    @media (max-width: $sm) {
+      flex-direction: column !important;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
     }
-    @media (max-width:$lg){
-        padding-block: 5rem !important;
-        
+    @media (max-width: $lg) {
+      gap: 3rem;
+      //   align-items: center;
     }
-    background-color: #fff;
-    margin-block:7rem;
-    // margin-top:15rem;
-    overflow-x: hidden;
-    .servicesContainer{
-        
-        @media (max-width:$sm){
-            flex-direction: column !important;
-            align-items: center;
-            justify-content: center;
-            gap:2rem;
 
-        }
-        @media (max-width:$lg){
-          gap:3rem;
-        //   align-items: center;
-            
-        }
-        
-        align-items: start;
-        gap:8rem;
-        margin-block: 5rem;
-        
-        >div {
-            @media(max-width:$sm){
+    align-items: start;
+    gap: 8rem;
+    margin-block: 5rem;
 
-                width: 100%;
-  
-            }
-            flex: 1;
-        }
-        .leftSection{
-            @media(max-width:$sm){
-                max-width: 60vw ;
-                align-self: flex-start !important;
-                margin: 0 !important;
-                margin-left: 0.25rem !important;
-            }
-            @media (max-width:$lg){
-                max-width: 50vw;
-                margin-left: 1.5rem;
-            }
-            max-width: 35vw;
-            gap: 2rem;
-            margin-left:4rem;
-        }
-    
-        .rightSection{
-            @media(max-width:$sm){
-                max-width: 90vw;
-                margin-left: 0;
-                justify-content: center;
-                align-items: center;
-                margin-right: 0;
-                gap:1.5rem;
-            }
-            display: flex;
-            flex-basis: 0;
-            flex-direction: column;
-            align-items: start;
-            gap:2.5rem;
-            flex-wrap: wrap;
-            max-width: 40vw;
-            margin-right: 4rem;
-        }
-    
+    > section {
+      @media (max-width: $sm) {
+        width: 80% !important;
+      }
+      flex: 1;
     }
-   
-    
-   
+    .leftSection {
+      @media (max-width: $sm) {
+        max-width: 60vw;
+        align-self: flex-start !important;
+        margin: 0 !important;
+        margin-left: 0.25rem !important;
+      }
+      @media (max-width: $lg) {
+        max-width: 50vw;
+        margin-left: 1.5rem;
+      }
+      max-width: 35vw;
+      gap: 2rem;
+      margin-left: 4rem;
+    }
+
+    .rightSection {
+      @media (max-width: $sm) {
+        max-width: 90vw;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        gap: 1.5rem;
+      }
+      display: flex;
+      flex-basis: 0;
+      flex-direction: column;
+      align-items: start;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+      max-width: 40vw;
+      margin-right: 4rem;
+    }
+  }
 }

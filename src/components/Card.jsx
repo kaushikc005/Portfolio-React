@@ -7,12 +7,12 @@ import { fadeIn } from '../utils/motion'
 const Card = () => { 
     
    return (
-       <motion.div 
+       <motion.article 
        initial="hidden"
        whileInView="show"
        className={`${css.cardWrapper}`}>
            {experience.map((item,key)=> (
-               <motion.div
+               <motion.section
                variants={fadeIn("left","tween",(key)*0.3,1)}    
                className={`${css.cardContainer} flex paddings`}>
                    <div className={css.leftCardSection}>
@@ -21,9 +21,9 @@ const Card = () => {
                    <div className={css.rightCardSection}>
                     <p className={css.cardPrimaryText}>{item.name}</p>
                    </div>
-               </motion.div>
+               </motion.section>
            ))}
-       </motion.div>
+       </motion.article>
    )
 }
 

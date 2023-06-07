@@ -1,156 +1,149 @@
-@import './global.scss';
+@import "./global.scss";
 
-
-.portfolioWrapper{
-    @media (max-width:$sm),(max-width:$md){
-        padding: 0 !important;
-    }
-    @media (max-width:$xl){
-        padding: 2rem !important;
-      }
-     padding: 8rem;
-     padding-left: 6rem !important;
-     padding-right: 6rem !important;
-     padding-bottom: 10rem !important;
-     justify-content: space-between;
-     background-color: #fff;
-     margin-top:7rem;
-     overflow-x: hidden;
-     header{
-        @media (max-width:$sm),(max-width:$md){
-            flex-direction: column !important;
-            align-items: flex-start !important;
-            margin: 3rem 0rem !important; 
-            
-            p{
-                font-size: 2rem !important;
-            }
-        }
-        
-        
-     }
-    .portfolioContainer{
-
-        @media (max-width:$sm),(max-width:$md){
-            flex-direction: column;
-            padding: 0 !important;
-            margin: 1rem !important;
-            padding-bottom: 2rem !important;
-        }
-        @media (max-width:$xl){
-            padding:2rem;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            margin: 0 !important;
-            gap: 4rem;
-          }
-        padding: 2rem 4rem;
-        gap:5rem;
-        margin-left: 2rem;
-
-        .portfolioImg{
-            position: relative;
-            img{
-                @media (max-width:$sm),(max-width:$md){
-                    width: 80% !important;
-                    padding: 0 !important;
-                    margin-left: 10%;
-                }
-                @media (max-width:$xl){
-                    width: 35vw;
-                    padding: 0;
-                  }
-                width: 20vw;
-                min-height: 248px;
-                border-radius: 20px;
-                box-shadow:1px 10px 10px rgba(0,0,0,0.1);  
-            }
-    
-            .overlay {
-                @media (max-width:$sm),(max-width:$md){
-                    width: 80% !important;
-                    padding: 0 !important;
-                    margin-left: 10%;
-                }
-                @media (max-width:$xl){
-                    width: 35vw;
-                    padding: 0;
-                  }
-                width: 20vw;
-               
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                border-radius: 20px;
-                background: rgba(0, 0, 0, 0);
-                transition: background 0.5s ease;
-              }
-              
-              .portfolioBtn{
-
-                @media (max-width:$sm),(max-width:$md){
-                    margin-left: 25%!important;
-                }
-                position: absolute;
-                width: 100%;
-                margin-left: 15%;
-                
-                top: 40%;
-                left: 50%;
-                text-align: center;
-                opacity: 0;
-               
-                transform: translateX(-50%);
-                transition: opacity .35s ease;
-
-
-                .demoBtn,.codeBtn{
-                    @media (max-width:$sm),(max-width:$md){
-                        padding: 0.75rem 1rem;
-                        
-                    }
-                    cursor: pointer;
-                    padding: 1rem 1.5rem;
-                    background-color: rgb(251, 251, 118);
-                    border-radius: 0.5rem;
-                    font-size: 1rem;
-                    font-weight: 600;
-                    background: rgb(2,0,36);
-                    color: #fff;
-                    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(180,182,87,1) 0%, rgba(88,227,202,1) 68%);   
-                    
-
-                }
-              }
-              &:hover {
-                .overlay {
-                    display: block;
-                    background: rgba(0, 0, 0, .4);
-                }
-                .portfolioBtn{
-                    opacity: 1;
-                  }
-                
-              }
-
-
-
-        }
-        
-        .portfolioBtn{
-            position: absolute;
-            top: 50%;
-            display: flex;
-            gap: 2rem;
-            opacity: 0;
-        }
+.portfolioWrapper {
+  @media (max-width: $sm), (max-width: $md) {
+    padding: 0 !important;
+  }
+  @media (max-width: $xl) {
+    padding: 2rem !important;
+  }
+  padding: 8rem;
+  padding-left: 6rem !important;
+  padding-right: 6rem !important;
+  padding-bottom: 10rem !important;
+  justify-content: space-between;
+  background-color: #fff;
+  margin-top: 9rem;
+  overflow-x: hidden;
+  header {
+    @media (max-width: $sm), (max-width: $md) {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      margin: 3rem 0rem !important;
        
+      p {
+        font-size: 2rem !important;
+      }
+      a{
+        margin-top: 1rem;
+      }
     }
-    
+  }
+  .portfolioContainer {
+    @media (max-width: $sm), (max-width: $md) {
+      flex-direction: column;
+      padding: 0 !important;
+      margin: 1rem !important;
+      padding-block: 2rem !important;
+    }
+    @media (max-width: $xl) {
+      padding: 2rem;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin: 0 !important;
+      margin-top: 4rem !important;
+      gap: 4rem;
+    }
+    padding: 2rem 4rem;
+    gap: 5rem;
+    margin-left: 2rem;
 
+    .portfolioImg {
+      position: relative;
+      img {
+        @media (max-width: $sm), (max-width: $md) {
+          width: 80% !important;
+          padding: 0 !important;
+          margin-left: 10%;
+        }
+        @media (max-width: $xl) {
+          width: 35vw;
+          padding: 0;
+        }
+        width: 20vw;
+        min-height: 248px;
+        border-radius: 20px;
+        box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.1);
+      }
 
+      .overlay {
+        @media (max-width: $sm), (max-width: $md) {
+          width: 80% !important;
+          padding: 0 !important;
+          margin-left: 10%;
+        }
+        @media (max-width: $xl) {
+          width: 35vw;
+          padding: 0;
+        }
+        width: 20vw;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+        background: rgba(0, 0, 0, 0);
+        transition: background 0.5s ease;
+      }
+
+      .portfolioBtn {
+        @media (max-width: $sm), (max-width: $md) {
+          margin-left: 25% !important;
+        }
+        position: absolute;
+        width: 100%;
+        margin-left: 10%;
+
+        top: 40%;
+        left: 50%;
+        text-align: center;
+        opacity: 0;
+
+        transform: translateX(-50%);
+        transition: opacity 0.35s ease;
+
+        .demoBtn,
+        .codeBtn {
+          @media (max-width: $sm), (max-width: $md) {
+            padding: 0.75rem 1rem;
+          }
+          cursor: pointer;
+          text-decoration: none;
+          padding: 1rem 1.5rem;
+          background-color: rgb(251, 251, 118);
+          border-radius: 0.5rem;
+          font-size: 1rem;
+          font-weight: 600;
+          background: rgb(2, 0, 36);
+          color: #fff;
+          background: linear-gradient(
+            90deg,
+            rgba(2, 0, 36, 1) 0%,
+            rgba(180, 182, 87, 1) 0%,
+            rgba(88, 227, 202, 1) 68%
+          );
+        }
+      }
+      &:hover {
+        .overlay {
+          display: block;
+          background: rgba(0, 0, 0, 0.4);
+        }
+        .portfolioBtn {
+          opacity: 1;
+        }
+      }
+    }
+
+    .portfolioBtn {
+      position: absolute;
+      top: 50%;
+      display: flex;
+      gap: 2rem;
+      opacity: 0;
+    }
+  }
 }
-

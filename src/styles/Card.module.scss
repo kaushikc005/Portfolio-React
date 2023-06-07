@@ -1,67 +1,64 @@
-@import './global.scss';
+@import "./global.scss";
 
+.cardWrapper {
+  @media (max-width: $sm), (max-width: $md) {
+    padding: 0;
+    width: 90vw !important;
+    align-items: center;
+  }
+  // @media (max-width:$lg){
 
-.cardWrapper{
-    @media(max-width:$sm),(max-width:$md){
-        padding: 0;
-        width: 90vw !important;
-        align-items: center;
+  // }
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  overflow-x: hidden;
+  .cardContainer {
+    @media (max-width: $sm), (max-width: $md) {
+      width: 76vw !important;
     }
-    // @media (max-width:$lg){
-        
-    // }
-    display: flex;
-    flex-direction: column;
+    @media (max-width: $lg) {
+      width: 100%;
+    }
+
+    align-items: center;
     gap: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    overflow-x: hidden;
-    .cardContainer{
-        
-        @media(max-width:$sm),(max-width:$md){
-            width: 80vw !important;
-            
-            // justify-content: center;
-
-        }
-        @media (max-width:$lg){
-            width: 100%;
-        }
-
-        align-items: center;
-        gap: 2rem;
-        min-width: 50%;
-        height: 40px;
-        background-color: #fff;
-        border: 1px solid rgba(0,0,0,0.1);
-        box-shadow:1px 1px 1px rgba(0,0,0,0.1);
-        border-radius: 8px;
-        cursor: pointer;
-        
-        .leftCardSection{
-            @media(max-width:$sm),(max-width:$md){
-                margin: 0 !important;
-
-            }
-            @media(max-width:$lg){
-                margin-left: 1rem;
-            }
-            background-color: #fff;
-            width: 20px;
-            margin-left: -40px;
-            font-size: 10px;
-        }
-        .rightCardSection{
-            background-color: #fff;
-            display: flex;
-            flex-direction: column;
-            
-            font-size: 2rem;
-            font-weight: bolder;
-            .cardPrimaryText{
-                font-size: 1.25rem;
-                text-align: left;
-            }
-        }
+    min-width: 50%;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 5px;
     }
+    .leftCardSection {
+      @media (max-width: $sm), (max-width: $md) {
+        margin: 0 !important;
+      }
+      @media (max-width: $lg) {
+        margin-left: 1rem;
+      }
+      background-color: #fff;
+      width: 20px;
+      margin-left: -40px;
+      font-size: 10px;
+    }
+    .rightCardSection {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+
+      font-size: 2rem;
+      font-weight: bolder;
+      .cardPrimaryText {
+        font-size: 1.25rem;
+        text-align: left;
+      }
+    }
+  }
 }
