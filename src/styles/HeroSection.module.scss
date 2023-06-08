@@ -39,13 +39,16 @@
       position: relative;
       left: 50%;
       font-size: 4rem;
-      height: 25vh;
+      height: 25vh !important;
       background-size: 20rem;
       display: flex;
       align-items: center;
       justify-content: center;
       background-position: bottom;
       transform: translateX(-50%);
+    }
+    @media(max-width:$xs){
+      height: 10vh !important;
     }
     @media (max-width: $lg) {
       top: 20%;
@@ -60,18 +63,21 @@
 
     img {
       @media (max-width: $sm), (max-width: $md) {
-        width: 80% !important;
+        width: 80vw !important;
         margin: 0;
         margin-top: 1rem;
       }
       @media (max-width: $lg) {
-        width: 35%;
+        width: 60vw !important;
       }
+  
+      width: 30vw;
       margin-bottom: 10rem;
-      background-image: url("splash.png") !important;
-      width: 30%;
+      background-image: url("splash.png");
       background-repeat: no-repeat;
       background-size: contain;
+      
+      
     }
   }
   .bottomSection {
