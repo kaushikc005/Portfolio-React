@@ -39,7 +39,7 @@
       position: relative;
       left: 50%;
       font-size: 4rem;
-      height: 10vh;
+      height: 25vh;
       background-size: 20rem;
       display: flex;
       align-items: center;
@@ -81,6 +81,12 @@
     margin-top: 10rem;
     align-items: center;
     flex-wrap: wrap;
+   
+
+    .bottomLeft{
+     
+      z-index: 2;
+    }
     .bottomRight {
       display: flex;
       align-self: center;

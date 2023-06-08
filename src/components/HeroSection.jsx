@@ -47,10 +47,11 @@ const HeroSection = () => {
           className={`${css.bottomLeft}`}
           variants={fadeIn("down", "tween", 0.3, 1)}
         >
-          <a href="mailto:kaushikc005@gmail.com" className="link">
+          <a href="mailto:kaushikc005@gmail.com"
+                    className='link'>
             kaushikc005@gmail.com
           </a>
-          <p className="secondary-text"></p>
+
         </motion.aside>
         <motion.aside
           className={`${css.bottomRight} flexSpaceBetween`}
