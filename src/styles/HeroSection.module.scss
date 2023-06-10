@@ -47,7 +47,7 @@
       background-position: bottom;
       transform: translateX(-50%);
     }
-    @media(max-width:$xs){
+    @media (max-width: $xs) {
       height: 10vh !important;
     }
     @media (max-width: $lg) {
@@ -70,14 +70,12 @@
       @media (max-width: $lg) {
         width: 60vw !important;
       }
-  
+
       width: 30vw;
       margin-bottom: 10rem;
       background-image: url("../assets/splash.png");
       background-repeat: no-repeat;
       background-size: contain;
-      
-      
     }
   }
   .bottomSection {
@@ -87,18 +85,14 @@
     margin-top: 10rem;
     align-items: center;
     flex-wrap: wrap;
-   
 
-    .bottomLeft{
-     
+    .bottomLeft {
       z-index: 2;
     }
     .bottomRight {
       display: flex;
       align-self: center;
       gap: 2rem;
-
-      
     }
   }
 }
