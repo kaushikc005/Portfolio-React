@@ -1,21 +1,20 @@
-import React from "react";
 import css from "../styles/PortfolioSection.module.scss";
 import { motion } from "framer-motion";
 import { fadeIn, textAnimate } from "../utils/motion";
 const PortfolioSection = () => {
   return (
     <motion.section
-    initial="hidden"
-    whileInView="show"
+      initial="hidden"
+      whileInView="show"
       className={`${css.portfolioWrapper} paddings`}
     >
       <a className="anchor" id="portfolio"></a>
-      <motion.header 
-      initial="hidden"
-      whileInView="show"
-      className="flexSpaceBetween">
-        <motion.p className="primary-text" 
-        variants={textAnimate(0.5)}>
+      <motion.header
+        initial="hidden"
+        whileInView="show"
+        className="flexSpaceBetween"
+      >
+        <motion.p className="primary-text" variants={textAnimate(0.5)}>
           My Latest Works
         </motion.p>
         <motion.a
@@ -25,7 +24,6 @@ const PortfolioSection = () => {
           target="_blank"
         >
           Explore more on Github
-          
         </motion.a>
       </motion.header>
       <figure className={`${css.portfolioContainer} flexStart`}>
@@ -60,7 +58,7 @@ const PortfolioSection = () => {
           />
           <div className={css.overlay}></div>
           <nav className={css.portfolioBtn}>
-          <a
+            <a
               className={css.demoBtn}
               href="https://exercise-app-react0.netlify.app/"
               target="_blank"
@@ -84,7 +82,7 @@ const PortfolioSection = () => {
           />
           <div className={css.overlay}></div>
           <nav className={css.portfolioBtn}>
-          <a
+            <a
               className={css.demoBtn}
               href="https://notes-webapp1.netlify.app/"
               target="_blank"

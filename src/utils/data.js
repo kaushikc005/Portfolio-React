@@ -23,7 +23,6 @@ const experience = [
   },
 ];
 
-
 export const skillArray = [
   {
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
@@ -34,7 +33,7 @@ export const skillArray = [
     color: "#1572b6",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+    src: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/tailwind-css-icon.png",
     color: "#2298bd",
   },
   {
@@ -56,6 +55,6 @@ export const skillArray = [
   {
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
     color: "#181616",
-  }
+  },
 ];
 export default experience;

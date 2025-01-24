@@ -26,7 +26,7 @@ const Navbar = () => {
       document.getElementById("#menuToggle").classList.remove(css.navShowMenu);
     else document.getElementById("#menuToggle").classList.add(css.navShowMenu);
   };
-   
+
   return (
     <motion.article
       variants={bounce}
@@ -56,7 +56,12 @@ const Navbar = () => {
             <a href="#portfolio">Portfolio</a>
           </li>
           <li>
-            <a href="https://drive.google.com/file/d/1XT5a4SarYB6e-ttS4nXIsU-Y6hdoxyED/view?usp=sharing" download>Download Resume</a>
+            <a
+              href="https://drive.google.com/file/d/1RgZK-QDOkdNm9FrfMDhbobgtJ5XL2fa_/view?usp=sharing"
+              download
+            >
+              Download Resume
+            </a>
           </li>
         </ul>
 
